@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER-SCIFI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <img src="galeria/logo.png" class="logo" alt="logo">
+
+        <div class="header-text">
+            <h1>CYBER-SCIFI</h1>
+            <p>La empresa líder en ciberseguridad. Eleginos o enfrentanos.</p>
+        </div>
+    </div>
+
+    <nav>
+        <button>sobre nosotros</button>
+        <button>contacto</button>
+        <button>trayectoria</button>
+        <button>paquetes</button>
+    </nav>
+</header>
+
+<section class="paquetes-container">
+    <div class="paquete animate__animated animate__fadeInUp">
+        <h2>Starter Pack</h2>
+        <p>Mínimo paquete de seguridad para personas individuales</p>
+    </div>
+
+    <div class="paquete animate__animated animate__fadeInUp animate__delay-1s">
+        <h2>Paquete Beginner</h2>
+        <p>Paquetes para proteger pymes</p>
+    </div>
+
+    <div class="paquete animate__animated animate__fadeInUp animate__delay-2s">
+        <h2>Paquete Premium</h2>
+        <p>Paquete para grandes empresas, cobertura total y mucho más</p>
+    </div>
+</section>
+
+<section class="formulario-seccion">
+    <h2 class="form-title animate__animated animate__fadeInDown">Contáctanos</h2>
+
+    <form id="formContacto" class="animate__animated animate__fadeInUp">
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <input type="tel" placeholder="Teléfono (opcional)">
+        <textarea placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="mensajeEnviado"></p>
+</section>
+
+<script>
+document.getElementById("formContacto").addEventListener("submit", function(e){
+    e.preventDefault();
+    const mensaje = document.getElementById("mensajeEnviado");
+    mensaje.innerText = "¡El formulario ha sido completado, gracias!";
+    mensaje.classList.add("animate__animated","animate__fadeInUp");
+});
+</script>
+
+</body>
+</html>

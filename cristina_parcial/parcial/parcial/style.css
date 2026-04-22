@@ -1,0 +1,156 @@
+body{
+    background:#05153b;
+    font-family:Arial, sans-serif;
+    color:white;
+    margin:0;
+}
+
+
+header{
+    background:#252a63;
+    padding:20px;
+    text-align:center;
+}
+
+.header-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+@keyframes glow {
+    0% { filter: drop-shadow(0 0 0px cyan); }
+    50% { filter: drop-shadow(0 0 10px cyan); }
+    100% { filter: drop-shadow(0 0 0px cyan); }
+}
+
+
+.logo{
+    height:120px;
+    animation: glow 2s infinite;
+}
+
+.header-text h1{
+    font-size:40px;
+    margin:0;
+}
+
+.header-text p{
+    font-size:16px;
+    opacity:.9;
+    margin-top:5px;
+}
+
+nav{
+    margin-top:18px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+nav button{
+    padding:8px 18px;
+    background:#4a586b;
+    border:none;
+    border-radius:10px;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+nav button:hover{
+    background:#5e6f84;
+    transform:scale(1.1);
+}
+
+
+.paquetes-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content:center;
+    padding:60px 0;
+}
+
+.paquete{
+    background:#071847;
+    border:2.5px solid #1d4ed8;
+    border-radius:8px;
+    width:350px;
+    padding:18px;
+    color:#cdd9ff;
+    transition:.35s;
+}
+
+.paquete h2{
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.paquete:hover{
+    transform:scale(1.05);
+    border-color:#3b82ff;
+    box-shadow:0 0 15px #3b82ff88;
+}
+
+    .formulario-seccion{
+    padding:50px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+.form-title{
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+form{
+    width:400px;
+    background:#071733;
+    border:2px solid #1d4ed8;
+    padding:25px;
+    margin:auto;
+    border-radius:10px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center; 
+}
+
+form input, form textarea{
+    width:100%;
+    margin-top:12px;
+    padding:10px;
+    background:#0d0d0d;
+    border:2px solid #4f6cff;
+    border-radius:5px;
+    color:white;
+}
+
+textarea{height:100px;}
+
+button{
+    margin-top:15px;
+    padding:12px 25px;
+    background:#3750ff;
+    border:none;
+    color:white;
+    font-size:18px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#4f6cff;
+    transform:scale(1.05);
+}
+
+#mensajeEnviado{
+    color:#00ffea;
+    margin-top:20px;
+    font-size:20px;
+}
